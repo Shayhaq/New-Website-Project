@@ -138,6 +138,25 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .logo {
+    margin: 10px 0px;
+  }
+  .menu div {
+    right: 2rem;
+    top: 4.41rem;
+  }
+  .menu div:nth-child(2) {
+    top: 4.19rem;
+  }
+  .menu .box {
+    right: 1.2rem;
+  }
+  .logo {
+    left: 4rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
   header {
     overflow: visible;
@@ -148,7 +167,7 @@ nav ul li a:hover {
     float: none;
     z-index: 10;
     top: 0rem;
-    left: 8rem;
+    left: 1rem;
     position: relative;
   }
   .logo:hover {
