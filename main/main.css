@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+header {
+  position: fixed;
+  top: 0;
+  background-color: #272623;
+  height: 120px;
+  overflow: hidden;
+  width: 100%;
+  z-index: 5;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  z-index: 10;
+  background-color: #272623;
+  float: left;
+  clear: both;
+  margin: 1.5rem;
+}
+
+nav {
+  overflow: hidden;
+  margin-top: 0.5rem;
+  padding: 0px 10px;
+}
+
+nav ul {
+  margin-left: 200px;
+  float: left;
+  clear: both;
+}
+
+nav ul li {
+  list-style: none;
+  float: left;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: #d1d0cd;
+  line-height: 100px;
+  font-size: 17px;
+  font-weight: 400;
+  display: block;
+  padding: 0.7rem .7rem;
+  text-transform: uppercase;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*Hamburger Menu*/
+.menu {
+  clear: both;
+  display: none;
+  padding: 5px;
+}
+
+.menu div {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff5f5;
+  margin: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 5rem;
+  top: 4.41rem;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 20;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menu div:nth-child(2) {
+  top: 4.19rem;
+  z-index: 5000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menu .box {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #272623;
+  cursor: pointer;
+  position: absolute;
+  right: 4rem;
+  top: 3.0rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.menu div:nth-child(3) {
+  top: 4.68rem;
+  z-index: 5000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.toggle .lineth {
+  -webkit-transform: rotate(45deg) translate(-3px, -6px);
+          transform: rotate(45deg) translate(-3px, -6px);
+}
+
+.toggle .linet {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .lineo {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  nav ul {
+    margin-left: 10px;
+    float: left;
+    clear: both;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    overflow: visible;
+    background-color: #272623;
+    z-index: 5;
+  }
+  .logo {
+    float: none;
+    z-index: 10;
+    top: 0rem;
+    left: 8rem;
+    position: relative;
+  }
+  .logo:hover {
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu {
+    display: block;
+    z-index: 10;
+  }
+  @-webkit-keyframes menuSlide {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes menuSlide {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  nav {
+    position: relative;
+    top: -20px;
+    height: 100vh;
+    width: 100%;
+    background-color: #272623;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .menu-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  nav ul {
+    overflow: hidden;
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  nav ul li {
+    list-style: none;
+    float: none;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    padding: 0px 0;
+    border-bottom: 1px solid #fff;
+    opacity: 0;
+  }
+  nav ul li a {
+    text-align: center;
+    display: block;
+    padding: 0;
+    line-height: 70px;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

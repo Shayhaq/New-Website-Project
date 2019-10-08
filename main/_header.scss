@@ -1,0 +1,66 @@
+$color:  (
+    primary: #272623,
+    secondary: #d1d0cd,
+    bg-color: rgb(255, 255, 255)
+);
+header{
+    position: fixed;
+    top: 0;
+    background-color: map-get($color, primary );
+    height: 120px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 5;
+      box-shadow:  0px 1px 5px  rgba(0, 0, 0, 0.4);
+}
+.logo{
+      
+    z-index: 10;
+    background-color: map-get($color, primary );
+    float: left;
+    clear: both;
+    margin: 1.5rem;
+    
+  }
+nav {
+    overflow: hidden;
+    margin-top: 0.5rem; 
+    padding: 0px 10px;
+    
+
+    ul{ 
+        margin-left: 200px;
+        float: left;
+        clear: both;
+        
+    }
+    ul li{
+       
+        list-style: none;
+        float: left;
+        
+        
+    }
+    ul li a{
+    
+        text-decoration: none;
+        font-family: "Quicksand", sans-serif;
+        color: map-get($color, secondary );
+        line-height: 100px;
+        font-size: 17px;
+        font-weight: 400;
+        display: block;
+        padding: 0.7rem .7rem;
+        text-transform: uppercase;
+        transition: all 500ms ease-in-out;
+        
+        &:hover{
+            color: map-get($color, bg-color );
+            
+        
+        }
+    }
+
+}
+
+
