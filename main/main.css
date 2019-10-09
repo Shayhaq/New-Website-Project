@@ -139,6 +139,12 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 360px) {
+  .container {
+    background: #272623;
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+  }
   .logo {
     margin: 10px 0px;
   }
@@ -246,5 +252,71 @@ nav ul li a:hover {
     line-height: 70px;
     opacity: 1;
   }
+  .container .Sm-Helmet-sc {
+    background-position: center;
+  }
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+  margin-top: 6.5rem;
+  left: 0;
+  right: 0;
+  color: #f80707;
+}
+
+.Sm-Helmet-sc {
+  background-image: url(../img/hl.png);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.Sm-Helmet-sc h1 {
+  font-size: 40px;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 200px;
+  padding-left: 2rem;
+  color: #fff;
+  text-shadow: 3px 3px 8px #111;
+  font-weight: 700;
+}
+
+.Sm-Helmet-sc h1:nth-child(2) {
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 0px;
+  padding-left: 3rem;
+}
+
+.Sm-Helmet-sc button {
+  all: unset;
+  background: #fff;
+  padding: 10px 20px;
+  color: #272623;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  -webkit-box-shadow: -9px -8px 0px rgba(138, 139, 139, 0.8);
+          box-shadow: -9px -8px 0px rgba(138, 139, 139, 0.8);
+}
+
+.Sm-Helmet-sc button:hover {
+  -webkit-box-shadow: -4px -3px 7px rgba(138, 139, 139, 0.8);
+          box-shadow: -4px -3px 7px rgba(138, 139, 139, 0.8);
+  background: #272623;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

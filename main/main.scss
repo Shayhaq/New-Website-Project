@@ -77,6 +77,18 @@ $color:  (
     }
 }
 @media screen and (max-width: 360px){
+    .container {
+        
+        background: map-get($color ,primary );
+
+        display: block;
+        position: relative;
+        margin-top: 2rem; 
+
+
+
+
+    }
     .logo{
         margin: 10px 0px;
       }
@@ -174,6 +186,69 @@ $color:  (
           
           
       }
+      .container .Sm-Helmet-sc {
+          
+        background-position: center;
+    }
     
 
+}
+//Section 1 starts here
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    margin-top: 6.5rem;
+    left: 0;
+    right: 0;
+    color: rgb(248, 7, 7);
+   
+}
+.Sm-Helmet-sc{
+    background-image: url(../img/hl.png);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    & h1{
+        font-size: 40px;
+        font-family: "Quicksand", sans-serif;
+        margin-top: 200px;
+        padding-left: 2rem; 
+        color: map-get($color, bg-color);
+        text-shadow: 3px 3px 8px #111;
+        font-weight: 700;
+    }
+    & h1:nth-child(2){
+        font-size: 35px;
+        font-family: "Quicksand", sans-serif;
+        margin-top: 0px;
+        padding-left: 3rem; 
+       
+    }
+    & button{
+        all: unset;
+        background: map-get($color ,bg-color );
+        padding: 10px 20px;
+        color: map-get($color, primary );
+        cursor: pointer;
+        font-family: "Quicksand", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        margin-left: 7rem;
+        margin-top: 1rem;
+        transition: all .25s ease-in-out;
+        box-shadow: -9px -8px 0px rgba(138, 139, 139, 0.8);
+        &:hover {
+            box-shadow: -4px -3px 7px rgba(138, 139, 139, 00.8);
+            background: map-get($color, primary );
+            
+            color: #fff;
+        }
+    }
+    
 }
