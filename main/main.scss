@@ -3,7 +3,8 @@
 $color:  (
     primary: #272623,
     secondary: #d1d0cd,
-    bg-color: #fff
+    bg-color: #fff,
+    accent-color: #000
 );
 
 *{
@@ -11,6 +12,10 @@ $color:  (
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
 }
 /*Hamburger Menu*/
 .menu {
@@ -68,6 +73,8 @@ $color:  (
 .toggle .lineo{
    opacity: 0;
 }
+// media query for tablets
+
 @media screen and (max-width: 1100px){
     nav ul{ 
         margin-left: 10px;
@@ -76,19 +83,10 @@ $color:  (
         transition: all 0.3s ease;
     }
 }
+ // media query for S5
+
 @media screen and (max-width: 360px){
-    .container {
-        
-        background: map-get($color ,primary );
-
-        display: block;
-        position: relative;
-        margin-top: 2rem; 
-
-
-
-
-    }
+  
     .logo{
         margin: 10px 0px;
       }
@@ -111,7 +109,13 @@ $color:  (
    .logo {
        left: 4rem;
    }
+ button {
+     padding: 1rem 0;
+ }
+
 }
+//media query for smaller tabs
+
 @media screen and (max-width: 900px){
    
     header {
@@ -186,17 +190,14 @@ $color:  (
           
           
       }
-      .container .Sm-Helmet-sc {
-
-        background-position: center;
-    }
-    
+   
 
 }
 //Section 1 starts here
 .container {
     width: 100%;
     overflow: hidden;
+    height: 400px;
     position: relative;
     clear: both;
     margin-top: 6.5rem;
@@ -207,7 +208,7 @@ $color:  (
 }
 .Sm-Helmet-sc{
     background-image: url(../img/hl2.png);
-    height: 70vh;
+    height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
