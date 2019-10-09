@@ -21,12 +21,12 @@ header {
 
 nav {
   overflow: hidden;
-  margin-top: 0.5rem;
   padding: 0px 10px;
+  width: 800px;
+  margin: 0.5rem auto 0 auto;
 }
 
 nav ul {
-  margin-left: 200px;
   float: left;
   clear: both;
 }
@@ -163,9 +163,12 @@ body {
   button {
     padding: 1rem 0;
   }
+  .container .Sm-Helmet-sc h1 {
+    margin-top: 150px;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   header {
     overflow: visible;
     background-color: #272623;

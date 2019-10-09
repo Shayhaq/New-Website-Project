@@ -112,11 +112,14 @@ body {
  button {
      padding: 1rem 0;
  }
+ .container .Sm-Helmet-sc h1 {
+     margin-top: 150px;
+ }
 
 }
 //media query for smaller tabs
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
    
     header {
         overflow: visible;
