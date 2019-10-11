@@ -17,7 +17,7 @@ body {
     width: 100%;
     height: 100%;
 }
-/*Hamburger Menu*/
+/*Hamburger Menu icon*/
 .menu {
    clear: both;
    display: none;
@@ -84,9 +84,22 @@ body {
     }
 }
  // media query for S5
+@media screen and (min-width: 1300px){
+    body {
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
 
+}
 @media screen and (max-width: 360px){
-  
+  .body {
+      text-align: center;
+  }
+  h1{
+      text-align: center;
+  }
     .logo{
         margin: 10px 0px;
       }

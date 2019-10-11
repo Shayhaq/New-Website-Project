@@ -40,14 +40,35 @@ nav ul li a {
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   color: #d1d0cd;
-  line-height: 100px;
   font-size: 17px;
   font-weight: 400;
   display: block;
-  padding: 0.7rem .7rem;
+  padding: 3.7rem .7rem;
   text-transform: uppercase;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: white;
+  left: 0;
+  right: 0;
+  padding-top: -20px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform ease-in-out 250ms;
+  transition: -webkit-transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+}
+
+nav ul li a:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 nav ul li a:hover {
@@ -67,7 +88,7 @@ body {
   height: 100%;
 }
 
-/*Hamburger Menu*/
+/*Hamburger Menu icon*/
 .menu {
   clear: both;
   display: none;
@@ -143,7 +164,22 @@ body {
   }
 }
 
+@media screen and (min-width: 1300px) {
+  body {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 360px) {
+  .body {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
   .logo {
     margin: 10px 0px;
   }
