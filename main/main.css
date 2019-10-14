@@ -360,4 +360,94 @@ body {
   background: #272623;
   color: #fff;
 }
+
+.category-sc {
+  max-width: 1250px;
+  height: 70vh;
+  overflow-y: hidden;
+  padding: 0.2rem 3.5rem;
+  left: -1rem;
+  position: relative;
+  right: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  color: #272623;
+}
+
+.category-sc h3, .category-sc a {
+  font-size: 28px;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.category-sc a {
+  text-decoration: none;
+  font-size: 25px;
+  bottom: 0.4rem;
+  position: absolute;
+  left: 0;
+  text-shadow: none;
+  color: #272623;
+  right: 0;
+}
+
+.category-sc a::before {
+  content: '';
+  display: block;
+  height: 2.5px;
+  width: 25%;
+  background: #272623;
+  left: 20px;
+  margin: 0 auto;
+  padding-top: -20px;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: -webkit-transform ease-in-out 250ms;
+  transition: -webkit-transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+}
+
+.category-sc a:hover::before {
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.category-sc a:hover {
+  color: #000;
+}
+
+.category-sc .open-fc, .category-sc .md-fc, .category-sc .fl-fc {
+  width: 33%;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  height: 290px;
+  padding: 0.2rem;
+  top: 4rem;
+  position: relative;
+  border-radius: 5px;
+  background-image: url(../img/bgt.jpg);
+  background-size: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  text-shadow: 6px 2px 6px white;
+  text-align: center;
+}
+
+.category-sc .md-fc {
+  top: 2rem;
+  left: 1.5rem;
+  background-image: url(../img/bgo.jpg);
+  background-size: 250px;
+}
+
+.category-sc .fl-fc {
+  background-image: url(../img/sm.jpg);
+  left: 3rem;
+  background-size: 280px;
+}
 /*# sourceMappingURL=main.css.map */

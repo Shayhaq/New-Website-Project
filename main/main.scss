@@ -82,3 +82,88 @@ body {
     }
     
 }
+.category-sc{
+    max-width: 1250px;
+    height: 70vh;
+    overflow-y: hidden;
+    padding: 0.2rem 3.5rem;
+    left: -1rem;
+    position: relative;
+    right: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    color: map-get($color, primary);
+    & h3{
+        font-size: 28px;
+        font-weight: 1000;
+        text-align: center;
+    }
+    & a{
+        @extend h3;
+        text-decoration: none;
+        font-size: 25px;
+        bottom: 0.4rem;
+        position: absolute;
+        left: 0;
+        text-shadow: none;
+        color: map-get($color, primary );
+        right: 0;
+        
+        &::before{
+            content: '';
+            display: block;
+            height: 2.5px;
+            width: 25%;
+            background: map-get($color, primary );
+            left: 20px;
+            margin: 0 auto;
+
+            padding-top: -20px; 
+            transform: scale(1,1);
+            transition: transform ease-in-out 250ms;
+        }
+        &:hover::before{
+
+            transform: scale(0,1);
+
+        }
+        &:hover{
+            color: map-get($color, accent-color );
+            
+        
+        }
+    }
+    .open-fc {
+        width: 33%;
+        box-shadow:  0px 1px 5px  rgba(0, 0, 0, 0.4);
+        height: 290px;
+        padding: 0.2rem;
+        top: 4rem;
+        position: relative;
+        border-radius: 5px;
+        background-image: url(../img/bgt.jpg);
+        background-size: 210px;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        text-shadow: 6px 2px 6px rgb(255, 255, 255);
+        text-align: center;
+
+    }
+    .md-fc {
+        @extend .open-fc;
+        top: 2rem;
+        left: 1.5rem;
+        background-image: url(../img/bgo.jpg);
+        background-size: 250px;
+
+    }
+    .fl-fc {
+        @extend .open-fc;
+        background-image: url(../img/sm.jpg);
+        left: 3rem;
+        background-size: 280px;
+    }
+}
