@@ -1,0 +1,136 @@
+// media query for tablets
+
+@media screen and (max-width: 1100px){
+    nav ul{ 
+        margin-left: 10px;
+        float: left;
+        clear: both;
+        transition: all 0.3s ease;
+    }
+}
+ // media query for 4k
+@media screen and (min-width: 1300px){
+    body {
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
+//for mobiles
+@media screen and (max-width: 360px){
+  .body {
+      text-align: center;
+  }
+  h1{
+      text-align: center;
+  }
+    .logo{
+        margin: 10px 0px;
+      }
+   
+    .menu div{
+       
+        right: 2rem;
+        top: 4.41rem;
+    }
+    .menu div:nth-child(2){
+        top: 4.19rem;
+       
+    
+    }
+    .menu .box{
+        
+        right: 1.2rem;
+        
+    }
+   .logo {
+       left: 4rem;
+   }
+ button {
+     padding: 1rem 0;
+ }
+ .container .Sm-Helmet-sc h1 {
+     margin-top: 150px;
+ }
+
+}
+//media query for smaller tabs
+
+@media screen and (max-width: 1000px){
+   
+    header {
+        overflow: visible;
+        background-color: map-get($color, primary );
+        z-index: 5;
+    }
+    .logo{
+      
+    
+        
+        float: none;
+        z-index: 10;
+        top: 0rem;
+        left: 1rem;
+        position: relative;
+        &:hover{
+            opacity: 0.7;
+            transition: all 0.3s ease-in-out;
+        }
+      }
+    .menu {
+        display: block;
+        z-index: 10;
+    }
+    @keyframes menuSlide {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    
+    nav {
+        position: relative;
+        top: -20px;
+       height: 100vh;
+       width: 100%;
+       background-color: map-get($color, primary );
+       overflow: hidden;
+       text-align: center;
+       position: relative;
+       transform: translateY(-100%);
+       transition: transform 0.5s ease;
+    }
+    .menu-active{
+        transform: translateY(0%);
+    }
+    nav ul{overflow: hidden;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    nav ul li {
+        list-style: none;
+        float: none;
+        margin: auto;
+        display: grid;
+        padding: 0px 0;
+        border-bottom: 1px solid #fff;
+        opacity: 0;
+    }
+     nav ul li a{
+          text-align: center;
+          display: block;
+          padding: 0;
+          line-height: 70px;
+          opacity: 1;
+          
+          
+      }
+   
+
+}
