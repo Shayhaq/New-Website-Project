@@ -1,3 +1,20 @@
+/*variables*/
+$color:  (
+    primary: #272623,
+    secondary: #d1d0cd,
+    bg-color: #fff,
+    accent-color: #000
+); 
+ 
+ // media query for 4k
+ @media screen and (min-width: 1300px){
+    body {
+        text-align: center;
+    }
+    h1{ font-size: 55px;
+        text-align: center;
+    }
+}
 // media query for tablets
 
 @media screen and (max-width: 1100px){
@@ -8,53 +25,7 @@
         transition: all 0.3s ease;
     }
 }
- // media query for 4k
-@media screen and (min-width: 1300px){
-    body {
-        text-align: center;
-    }
-    h1{
-        text-align: center;
-    }
-}
-//for mobiles
-@media screen and (max-width: 360px){
-  .body {
-      text-align: center;
-  }
-  h1{
-      text-align: center;
-  }
-    .logo{
-        margin: 10px 0px;
-      }
-   
-    .menu div{
-       
-        right: 2rem;
-        top: 4.41rem;
-    }
-    .menu div:nth-child(2){
-        top: 4.19rem;
-       
-    
-    }
-    .menu .box{
-        
-        right: 1.2rem;
-        
-    }
-   .logo {
-       left: 4rem;
-   }
- button {
-     padding: 1rem 0;
- }
- .container .Sm-Helmet-sc h1 {
-     margin-top: 150px;
- }
 
-}
 //media query for smaller tabs
 
 @media screen and (max-width: 1000px){
@@ -79,8 +50,12 @@
         }
       }
     .menu {
-        display: block;
+        display: block !important;
+        
         z-index: 10;
+    }
+    .menu div {
+        position: fixed !important;
     }
     @keyframes menuSlide {
         from {
@@ -131,6 +106,65 @@
           
           
       }
+      .category-sc{
+          width: auto;
+          height: 180vh !important;
+          display: block!important;
+          padding: 1rem 2rem !important;
+          margin: 0 auto;
+      }
+      .category-sc .open-fc {
+          width: 100%!important;
+          float: none !important;
+          top: 1.5rem !important;
+          height: 315px!important;
+          right: -1rem!important;
+      }
+      .category-sc .md-fc {
+          margin-top: 2rem!important;
+          left: 15px!important;
+      }
+      .category-sc .fl-fc {
+        margin-top: 2rem!important;
+        left: 15px!important;
+      }
+
+}
+//for mobiles
+@media screen and (max-width: 360px){
+  .body {
+      text-align: center;
+  }
+  h1{
+      text-align: center;
+  }
+    .logo{
+        margin: 10px 0px;
+      }
    
+    .menu div{
+       
+        right: 2rem;
+        top: 4.41rem;
+    }
+    .menu div:nth-child(2){
+        top: 4.19rem;
+       
+    
+    }
+    .menu .box{
+        
+        right: 1.2rem;
+        
+    }
+   .logo {
+       left: 4rem;
+   }
+ button {
+     padding: 1rem 0;
+ }
+ .container .Sm-Helmet-sc h1 {
+     margin-top: 150px;
+ }
 
 }

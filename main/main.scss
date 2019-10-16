@@ -1,4 +1,11 @@
+/*Media Queries*/
+@import "./mediaqueries";
+
 @import "./header";
+/*import for hambuger menu*/
+@import "./hmenu";
+/*imprt for mediaqueries*/
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 $color:  (
     primary: #272623,
@@ -17,10 +24,7 @@ body {
     width: 100%;
     height: 100%;
 }
-/*import for hambuger menu*/
-@import "./hmenu";
-/*imprt for mediaqueries*/
-@import "./mediaqueries";
+
 
 //Section 1 starts here
 .container {
