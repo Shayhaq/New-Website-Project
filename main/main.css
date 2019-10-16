@@ -455,6 +455,16 @@ body {
   }
   h1 {
     text-align: center;
+    margin-top: 10px;
+  }
+  .container .Sm-Helmet-sc .hero {
+    margin-top: 0.5rem !important;
+  }
+  .container .Sm-Helmet-sc h1 {
+    margin-top: 0.8rem !important;
+  }
+  .container .Sm-Helmet-sc h1:nth-child(1) {
+    margin-top: 4rem !important;
   }
   .logo {
     margin: 10px 0px;
