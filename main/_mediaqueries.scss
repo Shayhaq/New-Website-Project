@@ -79,7 +79,7 @@ $color:  (
        position: relative;
        transform: translateY(-100%);
        transition: transform 0.5s ease;
-       z-index: 250;
+      
     }
     .menu-active{
         transform: translateY(0%);
@@ -97,7 +97,7 @@ $color:  (
         padding: 0px 0;
         border-bottom: 1px solid #fff;
         opacity: 0;
-        z-index: 251;
+       
     }
      nav ul li a{
          z-index: 252;

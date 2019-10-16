@@ -396,7 +396,6 @@ body {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    z-index: 250;
   }
   .menu-active {
     -webkit-transform: translateY(0%);
@@ -417,7 +416,6 @@ body {
     padding: 0px 0;
     border-bottom: 1px solid #fff;
     opacity: 0;
-    z-index: 251;
   }
   nav ul li a {
     z-index: 252;
