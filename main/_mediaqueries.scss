@@ -7,47 +7,42 @@ $color:  (
 ); 
  
  // media query for 4k
- @media screen and (min-width: 1300px){
+ @media screen and (min-width: 1001px) and (max-width: 2150px){
     body {
         text-align: center;
     }
-    h1{ font-size: 55px;
+    h1{ font-size: 55px !important;
         text-align: center;
+    }
+    .btn {
+        margin-left: 0 !important;
+    }
+    .container{
+        height: 500px;
     }
 }
 // media query for tablets
 
-@media screen and (max-width: 1100px){
-    nav ul{ 
-        margin-left: 10px;
-        float: left;
-        clear: both;
-        transition: all 0.3s ease;
-    }
-}
+
 
 //media query for smaller tabs
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
    
+    .container {
+        height: 400px !important;
+    }
     header {
         overflow: visible;
         background-color: map-get($color, primary );
         z-index: 5;
     }
     .logo{
-      
-    
-        
         float: none;
         z-index: 10;
         top: 0rem;
         left: 1rem;
         position: relative;
-        &:hover{
-            opacity: 0.7;
-            transition: all 0.3s ease-in-out;
-        }
       }
     .menu {
         display: block !important;
@@ -111,10 +106,10 @@ $color:  (
       }
      
       .category-sc{
-          width: auto;
-          height: 180vh !important;
+
+          height: auto;
           display: block!important;
-          padding: 1rem 2rem !important;
+          padding: 4rem 2rem !important;
           margin: 0 auto;
       }
       .category-sc .open-fc {
@@ -132,28 +127,41 @@ $color:  (
         margin-top: 2rem!important;
         left: 15px!important;
       }
+      .new-sc{
+          margin: 0 auto;
+          height: 200vh!important;
+           h2{
+               text-align: center;
+           }
+      }
+.new-sc  .featured-products {
+       width: 300px;
+       left:3em;
 
+       button {
+        
+           left: 11rem !important;
+       }
+   }
 }
 //for mobiles
-@media screen and (max-width: 360px){
+@media screen and (max-width: 450px) {
   .body {
       text-align: center;
   }
-  h1{
+  .container .Sm-Helmet-sc {
+      padding-top: 10rem;
+  }
+  .container .Sm-Helmet-sc h1{
       text-align: center;
-      margin-top: 10px;
+      font-size: 35px !important;
+      margin-top: 0.1rem;
+      padding: 0 !important;
   }
-  .container .Sm-Helmet-sc .hero{
-      margin-top: 0.5rem !important;
-  }
-.container .Sm-Helmet-sc h1{
-    margin-top: 0.8rem!important;
-}
-.container .Sm-Helmet-sc h1:nth-child(1){
-    margin-top: 4rem !important;
-}
+ 
     .logo{
         margin: 10px 0px;
+        left: 4rem;
       }
    
     .menu div{
@@ -161,24 +169,19 @@ $color:  (
         right: 2rem;
         top: 4.41rem;
     }
-    .menu div:nth-child(2){
-        top: 4.19rem;
-       
     
-    }
     .menu .box{
         
         right: 1.2rem;
         
     }
-   .logo {
-       left: 4rem;
-   }
+  
  button {
      padding: 1rem 0;
  }
- .container .Sm-Helmet-sc h1 {
-     margin-top: 150px;
- }
+.new-sc h2{
+    font-size: 3rem;
+
+}
 
 }

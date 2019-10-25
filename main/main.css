@@ -57,7 +57,7 @@ nav ul li a::before {
   background: white;
   left: 0;
   right: 0;
-  padding-top: -20px;
+  top: 5rem;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transition: -webkit-transform ease-in-out 250ms;
@@ -182,6 +182,7 @@ body {
   font-size: 40px;
   font-family: "Quicksand", sans-serif;
   margin-top: 200px;
+  margin-bottom: 0.5rem;
   padding-left: 2rem;
   color: #fff;
   text-shadow: 3px 3px 8px #111;
@@ -197,32 +198,29 @@ body {
 
 .Sm-Helmet-sc button {
   all: unset;
-  background: #fff;
-  padding: 10px 20px;
-  color: #272623;
+  background: #222222 transparent;
+  padding: 8px 29px;
+  color: #fff;
   cursor: pointer;
+  border: 3.9px solid white;
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
-  font-weight: 500;
-  border-radius: 0.5rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
   margin-left: 7rem;
-  margin-top: 1rem;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-  -webkit-box-shadow: -9px -8px 0px rgba(138, 139, 139, 0.8);
-          box-shadow: -9px -8px 0px rgba(138, 139, 139, 0.8);
+  margin-top: 0.2rem;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 
 .Sm-Helmet-sc button:hover {
-  -webkit-box-shadow: -4px -3px 7px rgba(138, 139, 139, 0.8);
-          box-shadow: -4px -3px 7px rgba(138, 139, 139, 0.8);
-  background: #272623;
-  color: #fff;
+  background: #fff;
+  color: #030202;
 }
 
-.category-sc {
+.category-sc, .new-sc {
   max-width: 1250px;
-  height: 70vh;
+  height: 400px;
   overflow-y: hidden;
   padding: 0.2rem 3.5rem;
   left: -1rem;
@@ -236,13 +234,13 @@ body {
   color: #272623;
 }
 
-.category-sc h3, .category-sc a {
+.category-sc h3, .new-sc h3, .category-sc a, .new-sc a {
   font-size: 28px;
   font-weight: 1000;
   text-align: center;
 }
 
-.category-sc a {
+.category-sc a, .new-sc a {
   text-decoration: none;
   font-size: 25px;
   bottom: 0.4rem;
@@ -253,7 +251,7 @@ body {
   right: 0;
 }
 
-.category-sc a::before {
+.category-sc a::before, .new-sc a::before {
   content: '';
   display: block;
   height: 2.5px;
@@ -270,16 +268,16 @@ body {
   transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
 }
 
-.category-sc a:hover::before {
+.category-sc a:hover::before, .new-sc a:hover::before {
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
 }
 
-.category-sc a:hover {
+.category-sc a:hover, .new-sc a:hover {
   color: #000;
 }
 
-.category-sc .open-fc, .category-sc .md-fc, .category-sc .fl-fc {
+.category-sc .open-fc, .new-sc .open-fc, .category-sc .md-fc, .new-sc .md-fc, .category-sc .fl-fc, .new-sc .fl-fc {
   width: 33%;
   -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
@@ -295,44 +293,159 @@ body {
   float: left;
   text-shadow: 6px 2px 6px white;
   text-align: center;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
-.category-sc .md-fc {
+.category-sc .open-fc:hover, .new-sc .open-fc:hover, .category-sc .md-fc:hover, .new-sc .md-fc:hover, .category-sc .fl-fc:hover, .new-sc .fl-fc:hover {
+  background-size: 240px;
+}
+
+.category-sc .md-fc, .new-sc .md-fc {
   top: 2rem;
   left: 1.5rem;
   background-image: url(../img/bgo.jpg);
   background-size: 250px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
-.category-sc .fl-fc {
+.category-sc .md-fc:hover, .new-sc .md-fc:hover {
+  background-size: 280px;
+}
+
+.category-sc .fl-fc, .new-sc .fl-fc {
   background-image: url(../img/sm.jpg);
   left: 3rem;
   background-size: 280px;
 }
 
+.category-sc .fl-fc:hover, .new-sc .fl-fc:hover {
+  background-size: 310px;
+}
+
+/*Featured Products Section*/
+.new-sc {
+  padding: 5rem 0;
+  width: 90%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.new-sc h2 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.new-sc .featured-products {
+  display: block;
+  position: relative;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  overflow: visible;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  padding: 0.2rem;
+  top: 2rem;
+  left: 3.5rem;
+  position: relative;
+  border-radius: 5px;
+  background-size: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  text-shadow: 6px 2px 6px white;
+  text-align: center;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.new-sc .featured-products h3, .new-sc .featured-products a {
+  font-size: 25px;
+}
+
+.new-sc .featured-products p {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+  left: -9rem;
+  font-size: 20px;
+}
+
+.new-sc .featured-products:nth-child(4) {
+  background-image: url(../img/mt.jpg);
+}
+
+.new-sc .featured-products:nth-child(5) {
+  background-image: url(../img/mt2.jpg);
+}
+
+.new-sc .featured-products:nth-child(2) {
+  background-image: url(../img/mt3.png);
+}
+
+.new-sc .featured-products:nth-child(3) {
+  background-image: url(../img/mt4.png);
+}
+
+.new-sc .featured-products:nth-child(6) {
+  background-image: url(../img/mt.jpg);
+}
+
+.new-sc .featured-products:nth-child(7) {
+  background-image: url(../img/mt2.jpg);
+}
+
+.new-sc button {
+  z-index: 2;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 150px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+  padding: 6px 26px;
+  border: 2px solid #000;
+  border-radius: 20vh;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.new-sc button:hover {
+  background: #000;
+  cursor: pointer;
+  color: #fff;
+}
+
 /*Media Queries*/
 /*variables*/
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1001px) and (max-width: 2150px) {
   body {
     text-align: center;
   }
   h1 {
-    font-size: 55px;
+    font-size: 55px !important;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 1100px) {
-  nav ul {
-    margin-left: 10px;
-    float: left;
-    clear: both;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  .btn {
+    margin-left: 0 !important;
+  }
+  .container {
+    height: 500px;
   }
 }
 
 @media screen and (max-width: 1000px) {
+  .container {
+    height: 400px !important;
+  }
   header {
     overflow: visible;
     background-color: #272623;
@@ -344,11 +457,6 @@ body {
     top: 0rem;
     left: 1rem;
     position: relative;
-  }
-  .logo:hover {
-    opacity: 0.7;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
   }
   .menu {
     display: block !important;
@@ -425,68 +533,72 @@ body {
     line-height: 70px;
     opacity: 1;
   }
-  .category-sc {
-    width: auto;
-    height: 180vh !important;
+  .category-sc, .new-sc {
+    height: auto;
     display: block !important;
-    padding: 1rem 2rem !important;
+    padding: 4rem 2rem !important;
     margin: 0 auto;
   }
-  .category-sc .open-fc, .category-sc .md-fc, .category-sc .fl-fc {
+  .category-sc .open-fc, .new-sc .open-fc, .category-sc .md-fc, .new-sc .md-fc, .category-sc .fl-fc, .new-sc .fl-fc {
     width: 100% !important;
     float: none !important;
     top: 1.5rem !important;
     height: 315px !important;
     right: -1rem !important;
   }
-  .category-sc .md-fc {
+  .category-sc .md-fc, .new-sc .md-fc {
     margin-top: 2rem !important;
     left: 15px !important;
   }
-  .category-sc .fl-fc {
+  .category-sc .fl-fc, .new-sc .fl-fc {
     margin-top: 2rem !important;
     left: 15px !important;
+  }
+  .new-sc {
+    margin: 0 auto;
+    height: 200vh !important;
+  }
+  .new-sc h2 {
+    text-align: center;
+  }
+  .new-sc .featured-products {
+    width: 300px;
+    left: 3em;
+  }
+  .new-sc .featured-products button {
+    left: 11rem !important;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 450px) {
   .body {
     text-align: center;
   }
-  h1 {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .container .Sm-Helmet-sc .hero {
-    margin-top: 0.5rem !important;
+  .container .Sm-Helmet-sc {
+    padding-top: 10rem;
   }
   .container .Sm-Helmet-sc h1 {
-    margin-top: 0.8rem !important;
-  }
-  .container .Sm-Helmet-sc h1:nth-child(1) {
-    margin-top: 4rem !important;
+    text-align: center;
+    font-size: 35px !important;
+    margin-top: 0.1rem;
+    padding: 0 !important;
   }
   .logo {
     margin: 10px 0px;
+    left: 4rem;
   }
   .menu div {
     right: 2rem;
     top: 4.41rem;
   }
-  .menu div:nth-child(2) {
-    top: 4.19rem;
-  }
   .menu .box {
     right: 1.2rem;
-  }
-  .logo {
-    left: 4rem;
   }
   button {
     padding: 1rem 0;
   }
-  .container .Sm-Helmet-sc h1 {
-    margin-top: 150px;
+  .new-sc h2 {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -50,6 +50,7 @@ body {
         font-size: 40px;
         font-family: "Quicksand", sans-serif;
         margin-top: 200px;
+        margin-bottom: 0.5rem;
         padding-left: 2rem; 
         color: map-get($color, bg-color);
         text-shadow: 3px 3px 8px #111;
@@ -64,30 +65,30 @@ body {
     }
     & button{
         all: unset;
-        background: map-get($color ,bg-color );
-        padding: 10px 20px;
-        color: map-get($color, primary );
+        background: rgb(34, 34, 34) transparent;
+        padding: 8px 29px;
+        color: map-get($color, bg-color );
         cursor: pointer;
+        border: 3.9px solid rgb(255, 255, 255);
         font-family: "Quicksand", sans-serif;
         font-size: 20px;
-        font-weight: 500;
-        border-radius: 0.5rem;
+        font-weight: 700;
+        border-radius: 1.5rem;
         margin-left: 7rem;
-        margin-top: 1rem;
-        transition: all .25s ease-in-out;
-        box-shadow: -9px -8px 0px rgba(138, 139, 139, 0.8);
+        margin-top: 0.2rem;
+        transition: all 350ms ease-in-out;
         &:hover {
-            box-shadow: -4px -3px 7px rgba(138, 139, 139, 00.8);
-            background: map-get($color, primary );
+            background: map-get($color, bg-color );
             
-            color: #fff;
+            color: rgb(3, 2, 2);
+            
         }
     }
     
 }
 .category-sc{
     max-width: 1250px;
-    height: 70vh;
+    height: 400px;
     overflow-y: hidden;
     padding: 0.2rem 3.5rem;
     left: -1rem;
@@ -153,7 +154,10 @@ body {
         float: left;
         text-shadow: 6px 2px 6px rgb(255, 255, 255);
         text-align: center;
-
+        transition: all ease-in-out 0.3s;
+        &:hover {
+            background-size: 240px;   
+        }
     }
     .md-fc {
         @extend .open-fc;
@@ -161,13 +165,110 @@ body {
         left: 1.5rem;
         background-image: url(../img/bgo.jpg);
         background-size: 250px;
-
+        transition: all ease-in-out 0.3s;
+        &:hover {
+            background-size: 280px;   
+        }
     }
     .fl-fc {
         @extend .open-fc;
         background-image: url(../img/sm.jpg);
         left: 3rem;
         background-size: 280px;
+        &:hover {
+            background-size: 310px;   
+        }
+    }
+}
+/*Featured Products Section*/
+.new-sc {
+    @extend .category-sc;
+    padding: 5rem 0;
+    
+    width: 90%;
+    height: auto;
+    display: block;
+    position: relative;
+    
+    
+    
+    h2 {
+        font-size: 50px;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+    
+    .featured-products {
+        display: block;
+        position: relative;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        overflow: visible;
+        width: 300px;
+        height: 300px;
+        box-shadow:  0px 1px 5px  rgba(0, 0, 0, 0.4);
+        padding: 0.2rem;
+        top: 2rem;
+        left: 3.5rem;
+        position: relative;
+        border-radius: 5px;
+        background-size: 210px;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        text-shadow: 6px 2px 6px rgb(255, 255, 255);
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+        h3{
+            font-size: 25px;
+        }
+        p{ position: absolute;
+            bottom: 0.5rem;
+            right: 0;
+            left: -9rem;
+            font-size: 20px;
+        }
+      
+    }
+    .featured-products:nth-child(4){
+        background-image: url(../img/mt.jpg);
+    }
+    .featured-products:nth-child(5){
+        background-image: url(../img/mt2.jpg);
+    }
+    .featured-products:nth-child(2){
+        background-image: url(../img/mt3.png);
+    }
+    .featured-products:nth-child(3){
+        background-image: url(../img/mt4.png);
+    }
+    .featured-products:nth-child(6){
+        background-image: url(../img/mt.jpg);
+    }
+    .featured-products:nth-child(7){
+        background-image: url(../img/mt2.jpg);
+    }
+
+    button {
+        z-index: 2;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 150px;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        background: transparent;
+        outline: none;
+        padding: 6px 26px;
+        border: 2px solid #000;
+        border-radius: 20vh;
+        transition:  all ease 0.3s;
+        &:hover {
+           background: #000;
+           cursor: pointer;
+            color: #fff;
+        }
     }
 }
 /*Media Queries*/
