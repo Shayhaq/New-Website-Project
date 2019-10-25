@@ -27,9 +27,82 @@ $color:  (
 
 //media query for smaller tabs
 @media (min-width: 851px) and (max-width: 991px){
+    header {
+        overflow: visible;
+        background-color: map-get($color, primary );
+        z-index: 5;
+    }
+    .logo{
+        float: none;
+        z-index: 10;
+        top: 0rem;
+        left: 1rem;
+        position: relative;
+      }
+    .menu {
+        display: block !important;
+        
+        z-index: 100;
+    }
+    .menu div {
+        position: fixed !important;
+    }
+    @keyframes menuSlide {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    
     .menu {
         display: block;
     }
+    nav {
+        position: relative;
+        top: -20px;
+       height: 100vh;
+       width: 100%;
+       background-color: map-get($color, primary );
+       overflow: hidden;
+       text-align: center;
+       position: relative;
+       transform: translateY(-100%);
+       transition: transform 0.5s ease;
+      
+    }
+    .menu-active{
+        transform: translateY(0%);
+    }
+    nav ul{overflow: hidden;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    nav ul li {
+        list-style: none;
+        float: none;
+        margin: auto;
+        display: grid;
+        padding: 0px 0;
+        border-bottom: 1px solid #fff;
+        opacity: 0;
+       
+    }
+     nav ul li a{
+         z-index: 252;
+          text-align: center;
+          display: block;
+          padding: 0;
+          line-height: 70px;
+          opacity: 1;
+          
+          
+      }
+     
 }
 @media screen and (max-width: 850px) {
    
