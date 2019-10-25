@@ -582,6 +582,9 @@ body {
   .body {
     text-align: center;
   }
+  .category-sc, .new-sc {
+    padding: 0 2rem 2rem !important;
+  }
   .container .Sm-Helmet-sc {
     padding-top: 10rem;
   }
