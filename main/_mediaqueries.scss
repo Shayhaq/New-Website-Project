@@ -26,8 +26,12 @@ $color:  (
 
 
 //media query for smaller tabs
-
-@media screen and (max-width: 1000px) {
+@media (min-width: 851px) and (max-width: 991px){
+    .menu {
+        display: block;
+    }
+}
+@media screen and (max-width: 850px) {
    
     .container {
         height: 400px !important;
