@@ -57,7 +57,7 @@ nav ul li a::before {
   background: white;
   left: 0;
   right: 0;
-  top: 5rem;
+  bottom: 1rem;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transition: -webkit-transform ease-in-out 250ms;
@@ -222,7 +222,7 @@ body {
   max-width: 1250px;
   height: 400px;
   overflow-y: hidden;
-  padding: 0.2rem 3.5rem;
+  padding: 2.0rem 3.5rem;
   left: -1rem;
   position: relative;
   right: 0;
@@ -337,7 +337,16 @@ body {
   font-size: 50px;
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: center;
+}
+
+.new-sc h2::after {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  height: 5px;
+  width: 200px;
+  background: #d1d0cd;
 }
 
 .new-sc .featured-products {
@@ -346,7 +355,7 @@ body {
   margin-left: 2rem;
   margin-top: 2rem;
   overflow: visible;
-  width: 300px;
+  width: 330px;
   height: 300px;
   -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
@@ -405,7 +414,7 @@ body {
   z-index: 2;
   position: absolute;
   bottom: 0.5rem;
-  left: 150px;
+  left: 200px;
   display: block;
   font-size: 20px;
   font-weight: bold;
@@ -556,7 +565,6 @@ body {
   }
   .new-sc {
     margin: 0 auto;
-    height: 200vh !important;
   }
   .new-sc h2 {
     text-align: center;
@@ -599,6 +607,13 @@ body {
   }
   .new-sc h2 {
     font-size: 3rem;
+  }
+  .new-sc {
+    padding: 3rem 0.1rem !important;
+  }
+  .new-sc .featured-products {
+    width: 85% !important;
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

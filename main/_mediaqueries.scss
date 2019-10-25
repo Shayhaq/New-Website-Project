@@ -129,7 +129,6 @@ $color:  (
       }
       .new-sc{
           margin: 0 auto;
-          height: 200vh!important;
            h2{
                text-align: center;
            }
@@ -183,5 +182,11 @@ $color:  (
     font-size: 3rem;
 
 }
-
+.new-sc {
+    padding: 3rem 0.1rem !important;
+}
+.new-sc  .featured-products{
+    width: 85% !important;
+    left: 0;
+}
 }

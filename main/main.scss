@@ -90,7 +90,7 @@ body {
     max-width: 1250px;
     height: 400px;
     overflow-y: hidden;
-    padding: 0.2rem 3.5rem;
+    padding: 2.0rem 3.5rem;
     left: -1rem;
     position: relative;
     right: 0;
@@ -196,7 +196,15 @@ body {
         font-size: 50px;
         padding: 0;
         margin: 0;
-        text-align: left;
+        text-align: center;
+        &::after{
+            content: '';
+            display: block;
+            margin: 10px auto;
+            height: 5px;
+            width: 200px;
+            background: map-get($color, secondary);
+        }
     }
     
     .featured-products {
@@ -205,7 +213,7 @@ body {
         margin-left: 2rem;
         margin-top: 2rem;
         overflow: visible;
-        width: 300px;
+        width: 330px;
         height: 300px;
         box-shadow:  0px 1px 5px  rgba(0, 0, 0, 0.4);
         padding: 0.2rem;
@@ -254,7 +262,7 @@ body {
         z-index: 2;
         position: absolute;
         bottom: 0.5rem;
-        left: 150px;
+        left: 200px;
         display: block;
         font-size: 20px;
         font-weight: bold;
