@@ -102,7 +102,27 @@ $color:  (
           
           
       }
+
+     .newsletter-div {
+         width: 96%;
+         height: auto;
+         img{
+             width: 26%;
+         }
+         .form-ctrl {
+            top: 0rem !important;
+            display: block;
+            left: -2rem;
+            width: 50%;
+        }
+        .btn-control{
+            top: 0rem !important;
+            left: 2rem;
+            width: 70%;
+        }
+     }
      
+
 }
 @media screen and (max-width: 850px) {
    
@@ -219,6 +239,25 @@ $color:  (
            left: 11rem !important;
        }
    }
+   .newsletter-div {
+    width: 96%;
+    height: auto;
+    img{
+        width: 26%;
+    }
+    .form-ctrl {
+       top: 0rem !important;
+       display: block;
+       left: -2rem;
+       width: 50%;
+   }
+   .btn-control{
+       top: 0rem !important;
+       left: 2rem;
+       width: 70%;
+   }
+}
+
 }
 //for mobiles
 @media screen and (max-width: 450px) {
@@ -260,14 +299,62 @@ $color:  (
  }
 .new-sc h2{
     font-size: 3rem;
-
+    &::after{
+        width: 50px;
+    }
 }
 .new-sc {
     padding: 3rem 0.1rem !important;
 }
 .new-sc  .featured-products{
-    width: 85% !important;
-    left: 0;
+    width: 85%;
+    margin: 1rem auto;
 }
+.newsletter-div {
+    width: 90%;
+    margin: 3rem auto;
+    box-shadow: none;
+    padding-bottom: 5rem;
+    height: auto;
+    img{
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 2rem;
+
+    }
+ .text-sm{
+     width: 99% !important;
+     overflow: visible;
+     margin: 0 auto;
+     padding: 0;
+     float: none;
+     h2{ text-align: center;
+         font-size: 20px;
+         letter-spacing: 1px;
+         margin-bottom: 1rem;
+         padding: 0;
+     }
+     p{
+         line-height: 25px;
+         text-align: center;
+     }
+ }
+    .form-ctrl {
+       top: 0rem !important;
+       display: block !important;
+       left: -2rem;
+       position: relative;
+       display: block;
+       width: 130% !important;
+   }
+   .btn-control{
+       top: 0rem !important;
+       left: 0rem;
+       width: 100%;
+   }
+}
+
 
 }
