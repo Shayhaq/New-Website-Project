@@ -87,7 +87,7 @@
                  </div>
     </div>
     <div class="newsletter-div">
-        <img src="../img/msg-icon.jpg" alt=" Newsletter icon">
+        <img src="img/msg-icon.jpg" alt=" Newsletter icon">
         <div class="text-newsltr text-sm">
             <h2>Newsletter Subscribtion</h2>
             <p>Subscribe and be the first to be
@@ -95,8 +95,10 @@
              and promotions.</p>
         </div>
         <div class="form-secton ">
-            <input type="text" class="form-ctrl" placeholder="Email">
-            <button class="btn-control">Subscribe</button>
+            <form method="POST" data-netlify="true">
+                <input type="text" class="form-ctrl" placeholder="Email">
+                <button class="btn-control">Subscribe</button>
+            </form>
         </div>
     </div>
       
