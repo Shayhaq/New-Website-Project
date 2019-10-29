@@ -213,6 +213,7 @@ nav ul li a:hover {
   color: #030202;
 }
 
+/* three category sections for helmets*/
 .category-sc, .new-sc {
   max-width: 1250px;
   height: 400px;
@@ -232,7 +233,7 @@ nav ul li a:hover {
 
 .category-sc h3, .new-sc h3, .category-sc a, .new-sc a {
   font-size: 24px;
-  font-weight: 50;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -920,7 +921,6 @@ nav ul li a:hover {
   .new-sc .featured-products .btn-sm {
     position: relative;
     float: right;
-    margin: 0;
     left: -10px !important;
     top: 75%;
     right: 0 !important;

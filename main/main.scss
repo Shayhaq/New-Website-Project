@@ -86,6 +86,7 @@ body {
     }
     
 }
+/* three category sections for helmets*/
 .category-sc{
     max-width: 1250px;
     height: 400px;
@@ -102,7 +103,7 @@ body {
     color: map-get($color, primary);
     & h3{
         font-size: 24px;
-        font-weight: 50;
+        font-weight: normal;
         text-align: center;
     }
     & a{
