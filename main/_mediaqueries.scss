@@ -21,12 +21,11 @@ $color:  (
         height: 500px;
     }
 }
-// media query for tablets
 
 
 
 //media query for smaller tabs
-@media (min-width: 851px) and (max-width: 991px){
+@media (min-width: 851px) and (max-width: 1000px){
     header {
         overflow: visible;
         background-color: map-get($color, primary );
@@ -102,259 +101,30 @@ $color:  (
           
           
       }
-
+      
      .newsletter-div {
          width: 96%;
          height: auto;
          img{
              width: 26%;
          }
-         .form-ctrl {
-            top: 0rem !important;
-            display: block;
-            left: -2rem;
-            width: 50%;
-        }
-        .btn-control{
-            top: 0rem !important;
-            left: 2rem;
-            width: 70%;
-        }
-     }
-     
-
-}
-@media screen and (max-width: 850px) {
-   
-    .container {
-        height: 400px !important;
-    }
-    header {
-        overflow: visible;
-        background-color: map-get($color, primary );
-        z-index: 5;
-    }
-    .logo{
-        float: none;
-        z-index: 10;
-        top: 0rem;
-        left: 1rem;
-        position: relative;
-      }
-    .menu {
-        display: block !important;
-        
-        z-index: 100;
-    }
-    .menu div {
-        position: fixed !important;
-    }
-    @keyframes menuSlide {
-        from {
-            opacity: 0;
-            transform: translateY(-50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-    
-    nav {
-        position: relative;
-        top: -20px;
-       height: 100vh;
-       width: 100%;
-       background-color: map-get($color, primary );
-       overflow: hidden;
-       text-align: center;
-       position: relative;
-       transform: translateY(-100%);
-       transition: transform 0.5s ease;
+         
+       
       
+     }
+     .form-ctrl {
+        top: 0rem !important;
+        float: left!important;
+        right: 3rem !important;
+        width: 110% !important;
+        
     }
-    .menu-active{
-        transform: translateY(0%);
-    }
-    nav ul{overflow: hidden;
+    .btn-control{
         display: block;
-        float: none;
-        margin: 0 auto;
+        top: 0rem !important;
+        left: 3rem;
+        width: 70% !important;
     }
-    nav ul li {
-        list-style: none;
-        float: none;
-        margin: auto;
-        display: grid;
-        padding: 0px 0;
-        border-bottom: 1px solid #fff;
-        opacity: 0;
-       
-    }
-     nav ul li a{
-         z-index: 252;
-          text-align: center;
-          display: block;
-          padding: 0;
-          line-height: 70px;
-          opacity: 1;
-          
-          
-      }
      
-      .category-sc{
-
-          height: auto;
-          display: block!important;
-          padding: 4rem 2rem !important;
-          margin: 0 auto;
-      }
-      .category-sc .open-fc {
-          width: 100%!important;
-          float: none !important;
-          top: 1.5rem !important;
-          height: 315px!important;
-          right: -1rem!important;
-      }
-      .category-sc .md-fc {
-          margin-top: 2rem!important;
-          left: 15px!important;
-      }
-      .category-sc .fl-fc {
-        margin-top: 2rem!important;
-        left: 15px!important;
-      }
-      .new-sc{
-          margin: 0 auto;
-           h2{
-               text-align: center;
-           }
-      }
-.new-sc  .featured-products {
-       width: 300px;
-       left:3em;
-
-       button {
-        
-           left: 11rem !important;
-       }
-   }
-   .newsletter-div {
-    width: 96%;
-    height: auto;
-    img{
-        width: 26%;
-    }
-    .form-ctrl {
-       top: 0rem !important;
-       display: block;
-       left: -2rem;
-       width: 50%;
-   }
-   .btn-control{
-       top: 0rem !important;
-       left: 2rem;
-       width: 70%;
-   }
 }
 
-}
-//for mobiles
-@media screen and (max-width: 450px) {
-  .body {
-      text-align: center;
-  }
-  .category-sc{
-      padding: 0 2rem 2rem !important;
-  }
-  .container .Sm-Helmet-sc {
-      padding-top: 10rem;
-  }
-  .container .Sm-Helmet-sc h1{
-      text-align: center;
-      font-size: 35px !important;
-      margin-top: 0.1rem;
-      padding: 0 !important;
-  }
- 
-    .logo{
-        margin: 10px 0px;
-        left: 4rem;
-      }
-   
-    .menu div{
-       
-        right: 2rem;
-        top: 4.41rem;
-    }
-    
-    .menu .box{
-        
-        right: 1.2rem;
-        
-    }
-  
- button {
-     padding: 1rem 0;
- }
-.new-sc h2{
-    font-size: 3rem;
-    &::after{
-        width: 50px;
-    }
-}
-.new-sc {
-    padding: 3rem 0.1rem !important;
-}
-.new-sc  .featured-products{
-    width: 85%;
-    margin: 1rem auto;
-}
-.newsletter-div {
-    width: 90%;
-    margin: 3rem auto;
-    box-shadow: none;
-    padding-bottom: 5rem;
-    height: auto;
-    img{
-        width: 40%;
-        display: block;
-        margin: 0 auto;
-        float: none;
-        margin-bottom: 2rem;
-
-    }
- .text-sm{
-     width: 99% !important;
-     overflow: visible;
-     margin: 0 auto;
-     padding: 0;
-     float: none;
-     h2{ text-align: center;
-         font-size: 20px;
-         letter-spacing: 1px;
-         margin-bottom: 1rem;
-         padding: 0;
-     }
-     p{
-         line-height: 25px;
-         text-align: center;
-     }
- }
-    .form-ctrl {
-       top: 0rem !important;
-       display: block !important;
-       left: -2rem;
-       position: relative;
-       display: block;
-       width: 130% !important;
-   }
-   .btn-control{
-       top: 0rem !important;
-       left: 0rem;
-       width: 100%;
-   }
-}
-
-
-}
