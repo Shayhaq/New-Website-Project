@@ -20,10 +20,6 @@ $color:  (
     box-sizing: border-box;
     overflow-x: hidden;
 }
-body {
-   
-}
-
 
 //Section 1 starts here
 .container {
@@ -62,6 +58,9 @@ body {
         margin-top: 0px;
         padding-left: 3rem; 
        
+    }
+    & a{
+        text-decoration: none;
     }
     & button{
         all: unset;
@@ -463,7 +462,109 @@ body {
           transform: rotate(360deg);
       }
   }
+/*readmore page secton*/
+.Sm-Helmet-picture{
+    width: 100%;
+    margin-top: 7rem;
+    overflow: hidden;
+    position: relative;
+}
+.sm-helmet-info{
+    float: left;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    left: 2.5rem;
+    box-sizing: border-box;
+    padding: 10rem 0rem;
+    height: 100%;
+    width: 690px;
+    & h2{
+        text-align: center;
+        font-size: 5rem;
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        padding: 0.5rem 0;
+        color: map-get($color, primary);
+    }
+    & p{
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.5rem 0;
+        width: 390px;
+        font-size: 20px;
+        margin: 0 auto;
+        color: map-get($color, accent-color);
+    }
+}
+.Sm-Helmet-picture img{
+    width: 100%;
 
+}
+/*overview section*/
+.container-pgtwo{
+    max-width: 1250px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.container-pgtwo h2 {
+    font-size: 4rem;
+    font-family: "Quicksand", sans-serif;
+    margin: 2rem 0;
+    margin-top: 2rem;
+    color: map-get($color, primary );
+    text-align: center;
+    &::after{
+
+        content: '';
+        display: block;
+        margin: 10px auto;
+        height: 5px;
+        width: 150px;
+        background: map-get($color, secondary);   
+    }
+   
+}
+.container-pgtwo .overview-section{
+    padding: -2rem;
+    margin: 0;
+}
+.container-pgtwo .overview-section .info-device {
+        float: left;
+        width: 50%;
+        text-transform: uppercase;
+        font-family: "Quicksand", sans-serif;
+        margin: 2rem 1rem;
+        color: map-get($color, primary );
+        text-align: left;
+    & h3{
+        font-size: 2.2rem;
+        margin-top: 5rem;
+    }
+    & p{
+        font-size: 1.2rem;
+        font-family: "Quicksand", sans-serif;
+        margin: 1rem 0;
+        text-transform: capitalize;
+        line-height: 2rem;
+        color: map-get($color, darker-s );
+        text-align: left;
+    }
+}
+.container-pgtwo .overview-section .img-div {
+    width: 40%;
+    float: right;
+}
+.container-pgtwo .overview-section .img-div img{
+    width: 100%;
+}
+.float-left {
+    float: left !important;
+}
+.float-right {
+    float: right !important;
+}
 /*Media Queries*/
 @import "./mediaqueries";
 @import "./mobilequery";

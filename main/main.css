@@ -191,6 +191,10 @@ nav ul li a:hover {
   padding-left: 3rem;
 }
 
+.Sm-Helmet-sc a {
+  text-decoration: none;
+}
+
 .Sm-Helmet-sc button {
   all: unset;
   background: #222222 transparent;
@@ -627,6 +631,123 @@ nav ul li a:hover {
           transform: rotate(360deg);
 }
 
+/*readmore page secton*/
+.Sm-Helmet-picture {
+  width: 100%;
+  margin-top: 7rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.sm-helmet-info {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  left: 2.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10rem 0rem;
+  height: 100%;
+  width: 690px;
+}
+
+.sm-helmet-info h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  color: #272623;
+}
+
+.sm-helmet-info p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 0.5rem 0;
+  width: 390px;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #000;
+}
+
+.Sm-Helmet-picture img {
+  width: 100%;
+}
+
+/*overview section*/
+.container-pgtwo {
+  max-width: 1250px;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container-pgtwo h2 {
+  font-size: 4rem;
+  font-family: "Quicksand", sans-serif;
+  margin: 2rem 0;
+  margin-top: 2rem;
+  color: #272623;
+  text-align: center;
+}
+
+.container-pgtwo h2::after {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  height: 5px;
+  width: 150px;
+  background: #d1d0cd;
+}
+
+.container-pgtwo .overview-section {
+  padding: -2rem;
+  margin: 0;
+}
+
+.container-pgtwo .overview-section .info-device {
+  float: left;
+  width: 50%;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  margin: 2rem 1rem;
+  color: #272623;
+  text-align: left;
+}
+
+.container-pgtwo .overview-section .info-device h3, .container-pgtwo .overview-section .info-device .category-sc a, .category-sc .container-pgtwo .overview-section .info-device a, .container-pgtwo .overview-section .info-device .new-sc a, .new-sc .container-pgtwo .overview-section .info-device a {
+  font-size: 2.2rem;
+  margin-top: 5rem;
+}
+
+.container-pgtwo .overview-section .info-device p {
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  line-height: 2rem;
+  color: #8b8b8a;
+  text-align: left;
+}
+
+.container-pgtwo .overview-section .img-div {
+  width: 40%;
+  float: right;
+}
+
+.container-pgtwo .overview-section .img-div img {
+  width: 100%;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
 /*Media Queries*/
 /*variables*/
 @media screen and (min-width: 1001px) and (max-width: 2150px) {
@@ -754,6 +875,33 @@ nav ul li a:hover {
     top: 0rem !important;
     left: 3rem;
     width: 70% !important;
+  }
+  .footer-map {
+    float: left;
+    width: 100%;
+  }
+  .sm-helmet-info {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    left: 2.5rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10rem 0rem;
+    height: 100%;
+    width: 690px;
+  }
+  .sm-helmet-info h2 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  .sm-helmet-info p {
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    float: left;
+    color: #000;
   }
 }
 
@@ -972,10 +1120,41 @@ nav ul li a:hover {
   }
   .footer-ul iframe {
     margin-top: 1rem;
-    margin-left: -3rem;
     height: 200px;
-    width: 200%;
+    width: 100%;
     overflow: visible;
+  }
+  .footer-map {
+    float: left;
+    width: 100%;
+  }
+  .sm-helmet-info h2 {
+    text-align: left;
+    font-size: 2.5rem !important;
+  }
+  .sm-helmet-info p {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-map {
+    width: 180%;
+    left: -3rem !important;
+  }
+  .footer-ul iframe {
+    width: 100%;
+  }
+  .sm-helmet-info {
+    bottom: -2rem !important;
+  }
+  .sm-helmet-info h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .sm-helmet-info p {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

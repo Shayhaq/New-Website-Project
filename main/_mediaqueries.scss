@@ -125,6 +125,31 @@ $color:  (
         left: 3rem;
         width: 70% !important;
     }
-     
+    .footer-map {
+        float: left;
+        width: 100%;
+    }
+    .sm-helmet-info{
+        float: left;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        left: 2.5rem;
+        box-sizing: border-box;
+        padding: 10rem 0rem;
+        height: 100%;
+        width: 690px;
+        & h2{
+            text-align: left;
+            font-size: 3rem;
+        }
+        & p{
+            text-align: left;
+            font-family: "Quicksand", sans-serif;
+            font-size: 20px;
+            float: left;
+            color: map-get($color, accent-color);
+        }
+    }   
 }
 
