@@ -5,7 +5,21 @@
 @import "./hmenu";
 /*imprt for mediaqueries*/
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+/*@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');*/
+@font-face {
+    src: url(../fonts/static/Quicksand-Bold.ttf);
+    font-family: Quicksand;
+}
+@font-face {
+    src: url(../fonts/static/Quicksand-Regular.ttf);
+    font-family: Quicksandr;
+}
+body{
+    p {
+        font-family: Quicksandr;
+    }
+}
+
 $color:  (
     primary: #272623,
     secondary: #d1d0cd,
@@ -95,7 +109,7 @@ $color:  (
     left: -1rem;
     position: relative;
     right: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Quicksandr;
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 auto;
@@ -104,6 +118,7 @@ $color:  (
         font-size: 24px;
         font-weight: bold;
         text-align: center;
+        font-family: Quicksand;
     }
     & a{
         @extend h3;
@@ -192,6 +207,7 @@ $color:  (
         font-weight: normal;
         padding: 0;
         margin: 0;
+        font-family: Quicksand;
         text-align: center;
         &::after{
             content: '';
@@ -489,7 +505,7 @@ $color:  (
     }
     & p{
         text-align: center;
-        font-family: "Quicksand", sans-serif;
+        font-family: "Quicksandr", sans-serif;
         padding: 0.5rem 0;
         width: 390px;
         font-size: 20px;
@@ -509,10 +525,11 @@ $color:  (
     padding: 1rem;
 }
 .container-pgtwo h2 {
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-family: "Quicksand", sans-serif;
-    margin: 2rem 0;
-    margin-top: 2rem;
+    margin: 0.2rem 0;
+    margin-top: 0.2rem;
+    text-transform: capitalize;
     color: map-get($color, primary );
     text-align: center;
     &::after{
@@ -521,11 +538,11 @@ $color:  (
         display: block;
         margin: 10px auto;
         height: 5px;
-        width: 150px;
+        width: 80px;
         background: map-get($color, secondary);   
     }
-   
 }
+
 .container-pgtwo .overview-section{
     padding: -2rem;
     margin: 0;
@@ -544,7 +561,7 @@ $color:  (
     }
     & p{
         font-size: 1.2rem;
-        font-family: "Quicksand", sans-serif;
+        font-family: "Quicksandr", sans-serif;
         margin: 1rem 0;
         text-transform: capitalize;
         line-height: 2rem;

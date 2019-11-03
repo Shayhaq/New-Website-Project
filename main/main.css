@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
 header {
   position: fixed;
   top: 0;
@@ -38,7 +37,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksandr", sans-serif;
   color: #d1d0cd;
   font-size: 16px;
   font-weight: 400;
@@ -143,6 +142,21 @@ nav ul li a:hover {
 }
 
 /*imprt for mediaqueries*/
+/*@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');*/
+@font-face {
+  src: url(../fonts/static/Quicksand-Bold.ttf);
+  font-family: Quicksand;
+}
+
+@font-face {
+  src: url(../fonts/static/Quicksand-Regular.ttf);
+  font-family: Quicksandr;
+}
+
+body p {
+  font-family: Quicksandr;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -227,7 +241,7 @@ nav ul li a:hover {
   left: -1rem;
   position: relative;
   right: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Quicksandr;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
@@ -239,6 +253,7 @@ nav ul li a:hover {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  font-family: Quicksand;
 }
 
 .category-sc a, .new-sc a {
@@ -328,6 +343,7 @@ nav ul li a:hover {
   font-weight: normal;
   padding: 0;
   margin: 0;
+  font-family: Quicksand;
   text-align: center;
 }
 
@@ -663,7 +679,7 @@ nav ul li a:hover {
 
 .sm-helmet-info p {
   text-align: center;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksandr", sans-serif;
   padding: 0.5rem 0;
   width: 390px;
   font-size: 20px;
@@ -684,10 +700,11 @@ nav ul li a:hover {
 }
 
 .container-pgtwo h2 {
-  font-size: 4rem;
+  font-size: 3.4rem;
   font-family: "Quicksand", sans-serif;
-  margin: 2rem 0;
-  margin-top: 2rem;
+  margin: 0.2rem 0;
+  margin-top: 0.2rem;
+  text-transform: capitalize;
   color: #272623;
   text-align: center;
 }
@@ -697,7 +714,7 @@ nav ul li a:hover {
   display: block;
   margin: 10px auto;
   height: 5px;
-  width: 150px;
+  width: 80px;
   background: #d1d0cd;
 }
 
@@ -723,7 +740,7 @@ nav ul li a:hover {
 
 .container-pgtwo .overview-section .info-device p {
   font-size: 1.2rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksandr", sans-serif;
   margin: 1rem 0;
   text-transform: capitalize;
   line-height: 2rem;
