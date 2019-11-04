@@ -1140,7 +1140,7 @@ body p {
     padding: 0;
   }
   .container-pgtwo {
-    width: 100%;
+    width: 95%;
     padding: 0 !important;
   }
   .none {
@@ -1153,7 +1153,7 @@ body p {
     float: none;
   }
   .container-pgtwo .overview-section .info-device {
-    width: 100% !important;
+    width: 95% !important;
     float: none !important;
   }
   .container-pgtwo .overview-section .info-device h3, .container-pgtwo .overview-section .info-device .category-sc a, .category-sc .container-pgtwo .overview-section .info-device a, .container-pgtwo .overview-section .info-device .new-sc a, .new-sc .container-pgtwo .overview-section .info-device a {
