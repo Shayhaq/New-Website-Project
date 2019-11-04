@@ -1135,6 +1135,35 @@ body p {
     left: 0;
     width: 100%;
   }
+  .footer-wrapper {
+    width: 99%;
+    padding: 0;
+  }
+  .container-pgtwo {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .none {
+    display: none;
+  }
+  .overview-section {
+    padding: 0 12px;
+  }
+  .float-left, .float-right {
+    float: none;
+  }
+  .container-pgtwo .overview-section .info-device {
+    width: 100% !important;
+    float: none !important;
+  }
+  .container-pgtwo .overview-section .info-device h3, .container-pgtwo .overview-section .info-device .category-sc a, .category-sc .container-pgtwo .overview-section .info-device a, .container-pgtwo .overview-section .info-device .new-sc a, .new-sc .container-pgtwo .overview-section .info-device a {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .container-pgtwo .overview-section .img-div {
+    width: 100%;
+    float: none;
+  }
   .footer-ul iframe {
     margin-top: 1rem;
     height: 200px;
