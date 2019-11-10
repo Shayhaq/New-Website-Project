@@ -582,6 +582,133 @@ $color:  (
 .float-right {
     float: right !important;
 }
+/*contact us page section starts here*/
+.contactuspage{
+    max-width: 1250px;
+    width: 90%;
+    margin: 8rem auto 1rem auto;
+    padding: 1rem 2rem;
+}
+.contactuspage .Email-us  p:nth-child(2){
+    margin-bottom: 3.5rem;
+  }
+.contactuspage .Email-us {
+    width: 30%;
+    float: left;
+    padding: 1rem;
+    margin-top: 3rem;
+   
+    h1 {
+        text-align: left;
+    width: 299px;
+    font-size: 40px;
+    margin-bottom: 3.5rem;
+    text-transform: uppercase;
+    color: map-get($color, primary );
+    font-family: Quicksand;
+        }   
+    .msg {
+           font-size: 17px;
+           font-family: Quicksandr;
+           color: map-get($color, darker-s);
+           text-align: left;
+           width: 299px;
+        
+         }
+         
+        p{  text-align: left;
+            font-size: 20px;
+             color: map-get($color, primary );
+        }
+       
+}
+.contact-frm{
+    display: flex;
+    width: 65%;
+    float: right;
+    padding: 1rem;
+    flex-flow: column wrap;
+    text-align: left;
+
+    label {
+        font-size: 25px;
+        font-family: Quicksandr;
+        text-align: left;
+        padding: 1rem 0;
+    }
+    input {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 2vh;
+        border: 1px solid map-get($color, darker-s );
+        outline: none;
+
+    }
+    textarea {
+        @extend input;
+        height: 200px;
+    }
+    button {
+        font-size: 28px;
+        border-radius: 40px;
+        font-weight: bold;
+        box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+        margin-top: 1.2rem;
+        transition: all ease-in-out 300ms;
+        width: 80%;
+        height: 55px;
+        background-color:map-get($color, primary );
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-family: Quicksand;
+        margin: 2rem auto;
+
+        &:hover {
+            box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px) scale(1.2);
+        }
+    }
+}
+/*About us page section*/
+.container-new {
+    margin: 6rem 0 0 0;
+    background-image: url(../img/about-img-sp.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    h1{
+        font-size: 150px !important;
+        margin-top: 15rem;
+        margin-left: 5rem;
+    
+        color: #fff;
+        text-align: left;
+
+    }
+}
+.abts{
+    padding: 2rem;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    h1 {
+        font-size: 80px !important;
+        color: map-get($color, primary );
+       margin-top: 3rem;
+
+    }
+    p{  
+        margin-top: 5rem;
+        font-size: 46px;
+        text-align: left;
+        line-height: 5rem;
+    }
+}
 /*Media Queries*/
 @import "./mediaqueries";
 @import "./mobilequery";

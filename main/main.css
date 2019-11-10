@@ -497,7 +497,7 @@ body p {
   margin-right: 100px;
 }
 
-.form-secton input[type=text] {
+.form-secton input[type=text], .form-secton .contact-frm textarea[type=text], .contact-frm .form-secton textarea[type=text] {
   border: 1px solid #525050;
   display: inline-block;
   padding: 10px;
@@ -513,7 +513,7 @@ body p {
           transform: translateY(50%);
 }
 
-.form-secton input[type=text]:focus {
+.form-secton input[type=text]:focus, .form-secton .contact-frm textarea[type=text]:focus, .contact-frm .form-secton textarea[type=text]:focus {
   outline: 0.5px solid #a09898;
 }
 
@@ -763,6 +763,149 @@ body p {
 
 .float-right {
   float: right !important;
+}
+
+/*contact us page section starts here*/
+.contactuspage {
+  max-width: 1250px;
+  width: 90%;
+  margin: 8rem auto 1rem auto;
+  padding: 1rem 2rem;
+}
+
+.contactuspage .Email-us p:nth-child(2) {
+  margin-bottom: 3.5rem;
+}
+
+.contactuspage .Email-us {
+  width: 30%;
+  float: left;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.contactuspage .Email-us h1 {
+  text-align: left;
+  width: 299px;
+  font-size: 40px;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+  color: #272623;
+  font-family: Quicksand;
+}
+
+.contactuspage .Email-us .msg {
+  font-size: 17px;
+  font-family: Quicksandr;
+  color: #8b8b8a;
+  text-align: left;
+  width: 299px;
+}
+
+.contactuspage .Email-us p {
+  text-align: left;
+  font-size: 20px;
+  color: #272623;
+}
+
+.contact-frm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  float: right;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: left;
+}
+
+.contact-frm label {
+  font-size: 25px;
+  font-family: Quicksandr;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.contact-frm input, .contact-frm textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2vh;
+  border: 1px solid #8b8b8a;
+  outline: none;
+}
+
+.contact-frm textarea {
+  height: 200px;
+}
+
+.contact-frm button {
+  font-size: 28px;
+  border-radius: 40px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  margin-top: 1.2rem;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  width: 80%;
+  height: 55px;
+  background-color: #272623;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: Quicksand;
+  margin: 2rem auto;
+}
+
+.contact-frm button:hover {
+  -webkit-box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0px, -10px) scale(1.2);
+          transform: translate(0px, -10px) scale(1.2);
+}
+
+/*About us page section*/
+.container-new {
+  margin: 6rem 0 0 0;
+  background-image: url(../img/about-img-sp.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.container-new h1 {
+  font-size: 150px !important;
+  margin-top: 15rem;
+  margin-left: 5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.abts {
+  padding: 2rem;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.abts h1 {
+  font-size: 80px !important;
+  color: #272623;
+  margin-top: 3rem;
+}
+
+.abts p {
+  margin-top: 5rem;
+  font-size: 46px;
+  text-align: left;
+  line-height: 5rem;
 }
 
 /*Media Queries*/
@@ -1181,6 +1324,37 @@ body p {
   .sm-helmet-info p {
     text-align: left;
     margin: 0;
+  }
+  .contactuspage .Email-us {
+    width: 100%;
+    overflow: visible;
+  }
+  .contactuspage .Email-us h1 {
+    text-align: left;
+    width: auto;
+    font-size: 40px;
+  }
+  .contact-frm {
+    width: 100%;
+    overflow: visible;
+  }
+  .contact-frm button {
+    font-size: 28px;
+    border-radius: 40px;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    margin-top: 1.2rem;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+    width: 100%;
+    height: 65px;
+  }
+  .contact-frm button:hover {
+    -webkit-box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -4px) scale(1.2);
+            transform: translate(0px, -4px) scale(1.2);
   }
 }
 
